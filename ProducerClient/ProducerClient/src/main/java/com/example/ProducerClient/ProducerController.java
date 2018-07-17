@@ -19,7 +19,7 @@ public class ProducerController {
 	public ResponseEntity<String> read(@PathVariable String name) {
 		JSONObject obj = new JSONObject();
         obj.put("name", "mkyong.com");
-        obj.put("age", new Integer(100));
+        obj.put("age", 100);
         JSONArray list = new JSONArray();
         list.add("msg 1");
         list.add("msg 2");
@@ -34,7 +34,7 @@ public class ProducerController {
 	public ResponseEntity<JSONObject> readUser() {
 		JSONObject obj = new JSONObject();
         obj.put("name", "mkyong.com");
-        obj.put("age", new Integer(100));
+        obj.put("age", 100);
         JSONArray list = new JSONArray();
         list.add("msg 1");
         list.add("msg 2");
