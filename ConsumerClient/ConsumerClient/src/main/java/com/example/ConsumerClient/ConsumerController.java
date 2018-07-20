@@ -56,6 +56,7 @@ public class ConsumerController {
 		consumerService.sampleString();
 		String message = restTemplate.getForObject(baseURL + "{name}", String.class, name);
 		//String greeting =  this.restTemplate.exchange(baseURL + "{name}", HttpMethod.GET, null,new ParameterizedTypeReference<String>() {},"Essaki").getBody();
+		//String greeting =  this.restTemplate.exchange(baseURL + "{name}", HttpMethod.GET, null,new ParameterizedTypeReference<String>() {},"Essaki").getBody();
 		return new ResponseEntity<>(message, HttpStatus.OK);
 	}
 
