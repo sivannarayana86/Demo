@@ -12,5 +12,6 @@ public class ConsumerService {
 	public void sampleString(){
 		System.out.println(name);
 		System.out.println(PropertiesReader.getInstance().getValue("samplestring-test"));
+		System.out.println(PropertiesReader.getInstance().getValue("samplestring-test"));
 	}
 }
