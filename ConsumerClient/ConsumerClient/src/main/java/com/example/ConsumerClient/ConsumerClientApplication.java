@@ -10,5 +10,6 @@ public class ConsumerClientApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(ConsumerClientApplication.class, args);
+ 		System.out.println("Result");
 	}
 }
