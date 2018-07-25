@@ -6,7 +6,7 @@ import com.example.product.entities.Product;
 
 public interface ProductRepository extends JpaRepository<Product, Integer> {
 
-	Object findOne(int anyInt);
+	Product findOne(int anyInt);
 
 	boolean delete(int anyInt);
 

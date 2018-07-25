@@ -1,6 +1,6 @@
 package com.examples.product.services;
 
-import java.util.Optional;
+import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -17,13 +17,13 @@ public class ProductServiceImpl implements ProductService{
     }
 
     @Override
-    public Iterable<Product> listAllProducts() {
+    public List<Product> listAllProducts() {
         return productRepository.findAll();
     }
 
     @Override
-    public Optional<Product> getProductById(Integer id) {
-        return productRepository.findById(id);
+    public Product getProductById(Integer id) {
+        return productRepository.findOne(id);
     }
 
     @Override
